@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="wonbae">
+    <meta name="description" content="레드버튼">
+    <title>보드게임카페 레드버튼</title>
+    <link rel="shortcut icon" href="./images/파비콘-32x32.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/cropped-파비콘-180x180.png">
+    <!-- 기본코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본코딩 CSS 파일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/casa.css">
+   <!-- 박스슬라이더 CSS -->
+   <link rel="stylesheet" href="./css/jquery.bxslider.css">
+   <style>
+       article {
+           max-width: 1920px;
+           margin: 0 auto;
+       }
+       article #gallery_wrap {
+           max-width: 1920px;
+       }
+       article #gallery_wrap img {
+           width: 100%;
+       }
+   </style>
+   <!-- 박스 슬라이더 JS -->
+   <script src="./js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <div class="curtain"></div>
+    <button id="topButton"><i class="fas fa-chevron-up"></i></button>
+   <div id="wrap">
+    <!-- Aside-->
+    <aside>
+        <div class="top_sub w1300">
+            <p>
+                레드버튼 프렌차이즈 가맹 안내
+            </p>
+            <p>
+                <a href="#">
+                    가맹 확인하기 &nbsp;&nbsp;
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </p>
+            <p>
+                <i class="far fa-times-circle"></i>
+            </p>
+        </div>
+    </aside>
+    <!-- /Aside-->
+    <!-- Header -->
+    <header> 
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Logo Area -->
+            <h1><img src="./images/GNB_logo.png" alt="로고"></h1>
+            <!-- /Logo Area -->
+        </div>
+        <!-- GNB Menu -->
+        <div class="gnb_all">
+            <div class="w1300">
+                <nav class="global">
+                    <ul class="user">
+                        <li><a href="#"><i class="far fa-user"></i></a></li>
+                        <li><a href="#"><i class="fas fa-sms"></i></a></li>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    </ul>
+                    <ul class="gnb">
+                        <li><a href="#">brand</a></li>
+                        <li><a href="#">boardgame</a></li>
+                        <li><a href="#">menu</a></li>
+                        <li><a href="#">store</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-sitemap"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- /GNB Menu -->
+        <!-- SNB Menu -->
+        <div class="snb">
+            <div class="w1300">
+                <ul class="snb_all w1300">
+                    <li>
+                        <ul class="sub_menu">
+                            <li><a href="#">레드버튼 소개</a></li>
+                            <li><a href="#">채용안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub_menu">
+                            <li><a href="#">레드버튼 전용앱</a></li>
+                            <li><a href="#">보드게임 찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub_menu">
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">스낵/푸드</a></li>
+                            <li><a href="#">세트메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub_menu">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="sub_menu no_mr">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">제휴/제안</a></li>
+                            <li><a href="#">자주묻는 질문</a></li>
+                            <li><a href="#">고객의견</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /SNB Menu -->
+    </header>
+    <!-- /Header -->
+    <!-- slider -->
+    <div id="gallery_wrap">
+        <ul class="slide_gallery">
+            <li><img src="./images/MAIN배너이미지1-scaled.jpg" alt="슬라이드1"></li>
+            <li><img src="./images/홈페이지-메인배너-PC.jpg" alt="슬라이드2"></li>
+        </ul>
+    </div>
+    <!-- /slider -->
+    
+    <!-- Contents -->
+    <main role="main">
+        <!-- Section 01 -->
+        <section class="md_pick">
+            <div class="leesedol w1300">
+                <h2>
+                    <iframe class="mainplay on"
+                        width="620"
+                        height="480"
+                        src="https://www.youtube.com/embed/H45vHlkrEP0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="allowfullscreen">
+                    </iframe>
+                    <iframe class="great"
+                        width="620"
+                        height="480"
+                        src="https://www.youtube.com/embed/btQHOXystto"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="allowfullscreen">
+                    </iframe>
+                    <iframe class="nine"
+                        width="620"
+                        height="480"
+                        src="https://www.youtube.com/embed/84iyBfsk2J4"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="allowfullscreen">
+                    </iframe>
+                    <iframe class="kings"
+                        width="620"
+                        height="480"
+                        src="https://www.youtube.com/embed/eahNAb4JSF4"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen="allowfullscreen">
+                    </iframe>
+                </h2>
+                <h3>
+                    <div class="sedol">이세돌의 보드게임</div>
+                    <div class="md_pick_area">
+                        <ul>
+                            <li>
+                                <div onclick="a(2)" class="sedolgames">
+                                    <img src="./images/이세돌_그레이트킹덤.jpg" alt="이세돌1">
+                                    <div class="overlay">
+                                        <p>Great Kingdom<br>영상보기</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div onclick="a(3)" class="sedolgames">
+                                    <img src="./images/이세돌_나인나이츠2.jpg" alt="이세돌2">
+                                    <div class="overlay">
+                                        <p>Nine Knights<br>영상보기</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="no_mr">
+                                <div onclick="a(4)" class="sedolgames">
+                                    <img src="./images/이세돌_킹스크라운2.jpg" alt="이세돌3">
+                                    <div class="overlay">
+                                        <p>King's Crown<br>영상보기</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <button onclick="a(1)">메인 영상보기</button>
+                    </p>
+                </h3>
+            </div>
+        </section>
+        <!-- /Section 01 -->
+        <!-- Section 02 -->
+        <section class="real_title">
+            <h2 class="real_time w1300">
+                <ul class="fran">
+                    <li><img src="./images/f-logo.png" alt="프랜차이즈"></li>
+                    <li><div onclick="b(1)">#홀</div></li>
+                    <li><div onclick="b(2)">#게임진열대</div></li>
+                    <li><div onclick="b(3)">#게임추천판</div></li>
+                    <li><div onclick="b(4)">#외부</div></li>
+                    <li>
+                        <img src="./images/인테리어.png" alt="홀설명">
+                        <p>인테리어</p>
+                    </li>
+                </ul>
+                <!-- slider -->
+                <div class="fran2">
+                    <ul class="fran_list"> 
+                        <li>
+                            <img src="./images/홀-1.png" alt="홀1">
+                            <p>로고조형물</p>
+                        </li>
+                        <li>
+                            <img src="./images/홀-2.png" alt="홀2">
+                            <p>홀 휴식공간</p>
+                        </li>
+                    </ul>
+                    <ul class="fran_list">
+                        <li>
+                            <img src="./images/게임진열대-1.png" alt="게임진열대1">
+                            <p>보드게임 진열장</p>
+                        </li>
+                        <li>
+                            <img src="./images/게임진열대-2.png" alt="게임진열대2">
+                            <p>모듈형 진열장 설계</p>
+                        </li>
+                    </ul>
+                    <ul class="fran_list">
+                        <li>
+                            <img src="./images/게임추천판-1.png" alt="게임추천판1">
+                            <p>보드게임 추천판</p>
+                        </li>
+                        <li>
+                            <img src="./images/게임추천판-2.png" alt="게임추천판2">
+                            <p>보조용품 바</p>
+                        </li>
+                    </ul>
+                    <ul class="fran_list">
+                        <li>
+                            <img src="./images/외부-1.png" alt="외부1">
+                            <p>외부간판 스타일 #1</p>
+                        </li>
+                        <li>
+                            <img src="./images/외부-2.png" alt="외부2">
+                            <p>외부간판 스타일 #2</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /slider -->
+            </h2>
+        </section>
+        <!-- /Section 02 -->
+        <!-- Section 03 -->
+        <section class="caxa">
+            <div class="w1300">
+                <h2>
+                    monthly boardgames Best 10
+                </h2>
+                <div class="caxa_game">
+                    <ul>
+                        <li>
+                            <a href="#1">
+                                <img src="./images/게임_스플렌더.png" alt="게임1">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>스플렌더</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_스플렌더.png" alt="게임1">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        스플렌더&nbsp;<span>Splendor</span>
+                                    </h2>
+                                    <h3>
+                                        2015년 판매량 1위에 빛나는<br>
+                                        보석칩으로 카드를 사서 모으는 극강의 두뇌꿀잼게임
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="hard">Hard</span>
+                                        인원 <span>2~4인</span>
+                                        게임시간 <span class="long">45분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>전략</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#2">
+                                <img src="./images/게임_다빈치코드.png" alt="게임2">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>다빈치코드</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_다빈치코드.png" alt="게임2">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        다빈치코드&nbsp;<span>DaVinci Code</span>
+                                    </h2>
+                                    <h3>
+                                        더지니어스 '흑과 백'! 숫자 추리게임 대명사!<br>
+                                        보드게임 입문자들의 필수코스!
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="easy">Easy</span>
+                                        인원 <span>2~4인</span>
+                                        게임시간 <span class="normal">20분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>숫자추리</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#3">
+                                <img src="./images/게임_클루.png" alt="게임3">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>클루</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_클루.png" alt="게임3">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        클루&nbsp;<span>Clue</span>
+                                    </h2>
+                                    <h3>
+                                        범인, 도구, 장소 이 3가지를 추리하라!<br>
+                                        추리게임의 베이직, 클루!
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="hard">Hard</span>
+                                        인원 <span>2~6인</span>
+                                        게임시간 <span class="long">35분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>범죄추리</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#4">
+                                <img src="./images/게임_인디언포커.png" alt="게임4">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>인디언포커</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_인디언포커.png" alt="게임4">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        인디언포커&nbsp;<span>Indian Poker</span>
+                                    </h2>
+                                    <h3>
+                                        오직 카드로만 승부본다!<br>
+                                        간단하지만 심장 쫄리는 추리 심리 베팅 게임~!
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="easy">Easy</span>
+                                        인원 <span>2~6인</span>
+                                        게임시간 <span class="normal">30분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>카드베팅</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#5">
+                                <img src="./images/게임_렉시오.png" alt="게임5">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>렉시오</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_렉시오.png" alt="게임5">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        렉시오&nbsp;<span>Lexio</span>
+                                    </h2>
+                                    <h3>
+                                        캐주얼하게 즐길 수 있는 손털기+선잡기 게임.<br>
+                                        상상이상의 중독게임이 당신을 기다립니다.
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="hard">Very Hard</span>
+                                        인원 <span>3~5인</span>
+                                        게임시간 <span class="normal">30분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>조합전략</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#6">
+                                <img src="./images/게임_루미큐브.png" alt="게임6">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>루미큐브</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_루미큐브.png" alt="게임6">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        루미큐브&nbsp;<span>Rummikub</span>
+                                    </h2>
+                                    <h3>
+                                        남녀노소 누구나 사랑하는 타일조합 손털기 게임!<br>
+                                        세계적인 게임 루미큐브!
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="normal">Normal</span>
+                                        인원 <span>2~6인</span>
+                                        게임시간 <span class="normal">30분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>타일조합</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#7">
+                                <img src="./images/게임_마법의미로.png" alt="게임7">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>마법의 미로</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_마법의미로.png" alt="게임7">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        마법의 미로&nbsp;<span>The Magic Labyrinth</span>
+                                    </h2>
+                                    <h3>
+                                        보이지 않는 미로를 찾는 여정이 시작된다.<br>
+                                        미로를 풀 수 있는 열쇠는 오직 기억력 뿐!
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="easy">Easy</span>
+                                        인원 <span>2~4인</span>
+                                        게임시간 <span class="short">20분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>길기억</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#8">
+                                <img src="./images/게임_블리츠.png" alt="게임8">
+                                <div class="overlay">
+                                    <p>더 보기</p>
+                                </div>
+                                <p>블리츠</p>
+                            </a>
+                            <div class="description">
+                                <i class="fas fa-times"></i>
+                                <div class="description_img">
+                                    <img src="./images/게임_블리츠.png" alt="게임8">
+                                </div>
+                                <div class="description_text">
+                                    <h2>
+                                        블리츠&nbsp;<span>Blitz</span>
+                                    </h2>
+                                    <h3>
+                                        상대방의 단어를 먼저 말해라! <br>
+                                        몸과 입이 따로따로! 재빠른 순발력과 센스가 필요한 게임!
+                                    </h3>
+                                    <h4>
+                                        난이도 <span class="easy">Very Easy</span>
+                                        인원 <span>3~6인</span>
+                                        게임시간 <span class="short">20분</span>
+                                    </h4>
+                                    <h5>
+                                        <p><i class="fas fa-check-circle"></i>설명영상 보유</p>
+                                        <span>단어연상</span>
+                                        <button><a href="#">보유매장 모두보기</a></button>
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <a href="#"><button>전체 보드게임 보기</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- /Section 03 -->
+    </main>
+    <!-- /Contents -->
+    <!-- Footer -->
+    <footer>
+        <div class="footer_information w1300">
+            <div class="footer_left">
+                <nav>
+                    <ul class="footer_gnb">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방식</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li class="no_mr"><a href="#">매장안내</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_info cf">
+                    <p class="footer_escrow">
+                        <!-- <span>
+                            고객님의 안전거래를 위해 현금 결제시, <br>
+                            구매안전 서비스를 이용하실 수 있습니다 [<a href="#">가입사실확인</a>]
+                        </span> -->
+                        <img src="./images/푸터_로고.png" alt="푸터로고">
+                    </p>
+                    <p class="addr">
+                        주소 : 경기도 안양시 동안구 동편로 13번길 65, 넥스트아이빌딩 3층 <br>
+                        사업자번호 : 224-86-00895 · 대표자 : 김동혁 · e-mail : info@redbutton.co.kr
+                    </p>
+                    <p>
+                        COPYRIGHT ⓒ Redbutton co.,Ltd. All rights reserved.
+                    </p>
+                </div>
+            </div>
+            <div class="footer_contact">
+                <dl>
+                    <dt>고객 센터</dt>
+                    <dd>1644-0641</dd>
+                    <dd>
+                        오전 9시~12시 / 오후 1시~6시 (주말, 공휴일 휴무)
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>BANK INFO</dt>
+                    <dd>신한은행 110-344-748940</dd>
+                    <dd>예금주: (주)이원배</dd>
+                </dl>
+            </div>
+            <!-- <img src="./images/푸터_로고.png" alt="푸터로고"> -->
+        </div>
+    </footer>
+    <!-- /Footer -->
+   </div>
+<script>
+    // 슬라이드
+    $('.slide_gallery').bxSlider({
+        auto:true,
+        mode: 'horizontal',
+        speed: 1000,
+        pause: 3000,
+        autoHover: true,
+        /* autoControls: true, */
+        pager: true,
+        // slideWidth: 1440
+    });
+
+
+</script>
+<script src="./js/redbutton.js"></script>
+</body>
+</html>
